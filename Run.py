@@ -1,9 +1,7 @@
 import customtkinter as ctk
 from PIL import Image, ImageTk
 
-# Import the AI Career Counselor form (gui.py)
-# Assuming gui.py is in the same directory, otherwise adjust the import path
-import GUI  # Import the gui module
+import GUI  # Import the gui.py file
 
 # Main application window
 app = ctk.CTk()
@@ -18,7 +16,7 @@ y = (screen_height // 2) - (716 // 2)
 app.geometry(f"1200x716+{x}+{y}")
 
 # Load the image
-image_path = "SkinSense1.jpg"
+image_path = "LandingPage.jpg"
 image = Image.open(image_path)
 photo = ImageTk.PhotoImage(image)
 
@@ -30,7 +28,7 @@ def open_project_window():
     new_window = ctk.CTkToplevel(app)
     new_window.title("Project Info")
     new_window.geometry("1200x720+210+270")
-    image_path = "/Users/affansmacbook/Desktop/Project Info1.jpg"
+    image_path = "Project InfoAI.jpg"
     try:
         image = Image.open(image_path)
         photo = ImageTk.PhotoImage(image)
@@ -45,7 +43,7 @@ def open_team_window():
     new_window = ctk.CTkToplevel(app)
     new_window.title("Meet the Team")
     new_window.geometry("1020x480+210+270")
-    image_path = "/Users/affansmacbook/Desktop/Meet the Team1.png"
+    image_path = "Meet the Team.png"
     try:
         image = Image.open(image_path)
         photo = ImageTk.PhotoImage(image)
@@ -60,7 +58,7 @@ def open_help_window():
     new_window = ctk.CTkToplevel(app)
     new_window.title("Help")
     new_window.geometry("1020x480+210+270")
-    image_path = "/Users/affansmacbook/Desktop/Help1.png"
+    image_path = "Help.png"
     image = Image.open(image_path)
     photo = ImageTk.PhotoImage(image)
     new_window.photo = photo
