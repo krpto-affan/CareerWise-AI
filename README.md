@@ -44,8 +44,7 @@ Make sure you’re using Python 3.8 or higher.
 
 📂 Project Structure
 graphql
-Copy
-Edit
+
 CareerWise-AI/
 ├── Run.py                # Entry point to launch the application
 ├── GUI.py                # GUI layout using CustomTkinter
